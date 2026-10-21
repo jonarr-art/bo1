@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BO1 Zombies</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app"></div>
+
+<div id="hud" class="hidden">
+  <div id="points">500</div>
+  <div id="round">1</div>
+  <div id="health">HP: 100</div>
+  <div id="perks"></div>
+  <div id="weapon-name">M1911</div>
+  <div id="ammo">8 / 80</div>
+  <div id="interact-prompt"></div>
+  <div id="power-hint"></div>
+</div>
+
+<div id="crosshair" class="hidden">
+  <span></span><span></span><span></span><span></span>
+</div>
+
+<div id="menu">
+  <h1>BO1 ZOMBIES</h1>
+  <p>select a map</p>
+  <div id="map-grid"></div>
+</div>
+
+<div id="lock-hint" class="hidden">Click to lock mouse</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
